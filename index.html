@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<header>
+    <div>
+        <div id = "banner">
+            <div id = "inner1" class="hide list" >Delete Your To Do</div>
+        </div>
+        <div id = "inner2">To do App</div>
+    </div>
+</header>
+<form onsubmit="return false">
+<input type="text"  id="todo" placeholder="Type a to do item!" class = "btn">
+<button type="button" class = "btn subm">Submit</button>
+</form>
+<br>
+<div class = "title">To Do</div>
+<div class = "title">In Progress</div>
+<div class = "title">Completed</div>
+    <div class="lists"> 
+        <div class="list" id="addHere">
+        <div class = "list-item" draggable="true">This is an example. Drag me to the top to delete</div>
+        </div>
+        <div class="list"></div>
+        <div class="list"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
